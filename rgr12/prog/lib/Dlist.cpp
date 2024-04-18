@@ -24,7 +24,7 @@ list *push_back(list *tail, string line) {
 }
 
 void freeList(list *head) {
-  while (head != nullptr) {
+  while (head != NULL) {
     list *temp = head;
     head = head->next;
     delete temp;
