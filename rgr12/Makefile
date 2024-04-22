@@ -13,7 +13,6 @@ CC = g++
 
 APP_PATH = $(BIN_DIR)/$(APP_NAME)
 
-# Добавляем Dlist.cpp и array.cpp в список исходных файлов
 APP_SOURCES := $(wildcard $(SRC_DIR)/myprog/*.cpp) $(SRC_DIR)/lib/Dlist.cpp $(SRC_DIR)/lib/array.cpp
 APP_OBJECTS := $(patsubst $(SRC_DIR)/%.cpp, $(OBJ_DIR)/$(SRC_DIR)/%.o, $(APP_SOURCES))
 
